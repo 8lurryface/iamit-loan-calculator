@@ -1,0 +1,79 @@
+* {
+	font-family: "Century Gothic";
+	font-size: 12px;
+}
+
+.container {
+	max-width: 400px;
+	display: flex;
+	margin: 0 auto;
+}
+.form-container{
+	margin-top: 10px;
+	flex: 1;
+}
+.output-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.row {
+	padding: 7px 0;
+	display: flex;
+}
+
+.row input, .row select {
+	flex: 1;
+}
+
+input, select {
+	border: 2px #c5c5c5 solid;
+	border-radius: 5px;
+	padding: 12px;
+}
+
+input:focus, select:focus {
+	outline: none;
+	border: 2px #a5a5a5 solid;
+}
+
+#btn {
+	width: 100%;
+	margin: 8px auto;
+	border: 2px #c5c5c5 solid;
+	outline: none;
+	height: 40px;
+	border-radius: 5px;
+	background-color: white;
+	color: #666;
+	padding: 10px 25px;
+}
+#btn:hover {
+	background-color: #c5c5c5;
+	color: white;
+	cursor: pointer;
+}
+#errorMsg {
+	color: #d12c2c;
+	font-family: "Century Gothic";
+}
+table, tr, th, td {
+	border: 1px #e8e8e8 solid;
+	border-collapse: collapse;
+	color: #3e4a57;
+	padding: 10px 20px;
+	font-family: "Century Gothic";
+}
+table {
+	margin: 0 auto;
+	margin-top: 15px;
+}
+thead, tfoot {
+	background-color: #e3e3d7;
+	font-weight: bold;
+}
+tr:nth-child(even) {
+	background-color: #efefef;
+}
+
