@@ -30,7 +30,7 @@ function checkUser() {
 }
 
 function createTable(term, amount) {
-	var headers = ["№", "Payment amount", "Loan body", "Percent %", "Remainder", "Payment reduction"];
+	var headers = ["#", "Payment amount", "Loan body", "Percent %", "Remainder", "Payment reduction"];
 	var table = document.createElement("table");
 	var thead = document.createElement("thead");
 	var tr = document.createElement("tr");
@@ -89,7 +89,7 @@ function createTable(term, amount) {
 	table.appendChild(tbody);
 
 	var msg = document.createElement("h3");
-	msg.innerHTML = "Monthly payment: " + lb.toFixed(2) + "</br>Interest rate: 13%";
+	msg.innerHTML = "Monthly payment: " + (sumOfPaymentAmount/term).toFixed(2) + "</br>Interest rate: 13%";
 	outputBox.appendChild(msg);
 	outputBox.appendChild(table);
 }
